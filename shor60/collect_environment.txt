@@ -1,0 +1,252 @@
+SUDO_GID=1003
+MAIL=/var/mail/USER
+LC_TIME=en_US.UTF-8
+USER=USER
+HOME=/home/kratosvm
+LC_MONETARY=en_US.UTF-8
+SUDO_UID=1001
+LOGNAME=USER
+TERM=xterm-256color
+USERNAME=USER
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+LC_ADDRESS=en_US.UTF-8
+LANG=C.UTF-8
+LC_TELEPHONE=en_US.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+SUDO_COMMAND=./collect-environment.sh
+LC_NAME=en_US.UTF-8
+SHELL=/bin/bash
+SUDO_USER=periklis
+LC_MEASUREMENT=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+PWD=/home/periklis
+LC_NUMERIC=en_US.UTF-8
+LC_PAPER=en_US.UTF-8
++ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.10
+Release:	18.10
+Codename:	cosmic
++ uname -a
+Linux qudot-60 4.18.0-1008-gcp #9-Ubuntu SMP Fri Mar 15 10:42:32 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              40
+On-line CPU(s) list: 0-39
+Thread(s) per core:  2
+Core(s) per socket:  20
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               79
+Model name:          Intel(R) Xeon(R) CPU @ 2.20GHz
+Stepping:            0
+CPU MHz:             2200.000
+BogoMIPS:            4400.00
+Hypervisor vendor:   KVM
+Virtualization type: full
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            56320K
+NUMA node0 CPU(s):   0-39
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat arch_capabilities
++ cat /proc/meminfo
+MemTotal:       991837120 kB
+MemFree:        990382148 kB
+MemAvailable:   985532796 kB
+Buffers:           54284 kB
+Cached:           390004 kB
+SwapCached:            0 kB
+Active:           385484 kB
+Inactive:         147832 kB
+Active(anon):      90236 kB
+Inactive(anon):      160 kB
+Active(file):     295248 kB
+Inactive(file):   147672 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               348 kB
+Writeback:             0 kB
+AnonPages:         89032 kB
+Mapped:            62272 kB
+Shmem:              1024 kB
+Slab:             200388 kB
+SReclaimable:      68448 kB
+SUnreclaim:       131940 kB
+KernelStack:        8624 kB
+PageTables:         3108 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    495918560 kB
+Committed_AS:    1277648 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      161772 kB
+DirectMap2M:     5081088 kB
+DirectMap1G:    1004535808 kB
++ inxi -F -c0
+./collect-environment.sh: 14: ./collect-environment.sh: inxi: not found
++ lsblk -a
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+loop0     7:0    0 55.1M  1 loop /snap/google-cloud-sdk/66
+loop1     7:1    0 57.6M  1 loop /snap/google-cloud-sdk/77
+loop2     7:2    0 89.5M  1 loop /snap/core/6130
+loop3     7:3    0 53.8M  1 loop /snap/lxd/10526
+loop4     7:4    0 53.8M  1 loop /snap/lxd/10343
+loop5     7:5    0 88.2M  1 loop /snap/core/5897
+loop6     7:6    0 89.3M  1 loop /snap/core/6673
+loop7     7:7    0   57M  1 loop /snap/google-cloud-sdk/76
+loop8     7:8    0   52M  1 loop /snap/lxd/9919
+loop9     7:9    0        0 loop 
+sda       8:0    0   10G  0 disk 
+├─sda1    8:1    0  9.9G  0 part /
+├─sda14   8:14   0    4M  0 part 
+└─sda15   8:15   0  106M  0 part /boot/efi
++ lsscsi -s
+./collect-environment.sh: 16: ./collect-environment.sh: lsscsi: not found
++ module list
+./collect-environment.sh: 17: ./collect-environment.sh: module: not found
++ nvidia-smi
+./collect-environment.sh: 18: ./collect-environment.sh: nvidia-smi: not found
++ lshw -short -quiet -sanitize
++ cat
+H/W path      Device      Class      Description
+================================================
+                          system     Google Compute Engine
+/0                        bus        Google Compute Engine
+/0/0                      memory     96KiB BIOS
+/0/401                    processor  Intel(R) Xeon(R) CPU @ 2.20GHz
+/0/402                    processor  CPU
+/0/403                    processor  CPU
+/0/404                    processor  CPU
+/0/405                    processor  CPU
+/0/406                    processor  CPU
+/0/407                    processor  CPU
+/0/408                    processor  CPU
+/0/409                    processor  CPU
+/0/40a                    processor  CPU
+/0/40b                    processor  CPU
+/0/40c                    processor  CPU
+/0/40d                    processor  CPU
+/0/40e                    processor  CPU
+/0/40f                    processor  CPU
+/0/410                    processor  CPU
+/0/411                    processor  CPU
+/0/412                    processor  CPU
+/0/413                    processor  CPU
+/0/414                    processor  CPU
+/0/415                    processor  CPU
+/0/416                    processor  CPU
+/0/417                    processor  CPU
+/0/418                    processor  CPU
+/0/419                    processor  CPU
+/0/41a                    processor  CPU
+/0/41b                    processor  CPU
+/0/41c                    processor  CPU
+/0/41d                    processor  CPU
+/0/41e                    processor  CPU
+/0/41f                    processor  CPU
+/0/420                    processor  CPU
+/0/421                    processor  CPU
+/0/422                    processor  CPU
+/0/423                    processor  CPU
+/0/424                    processor  CPU
+/0/425                    processor  CPU
+/0/426                    processor  CPU
+/0/427                    processor  CPU
+/0/428                    processor  CPU
+/0/1000                   memory     961GiB System Memory
+/0/1000/0                 memory     16GiB DIMM RAM
+/0/1000/1                 memory     16GiB DIMM RAM
+/0/1000/2                 memory     16GiB DIMM RAM
+/0/1000/3                 memory     16GiB DIMM RAM
+/0/1000/4                 memory     16GiB DIMM RAM
+/0/1000/5                 memory     16GiB DIMM RAM
+/0/1000/6                 memory     16GiB DIMM RAM
+/0/1000/7                 memory     16GiB DIMM RAM
+/0/1000/8                 memory     16GiB DIMM RAM
+/0/1000/9                 memory     16GiB DIMM RAM
+/0/1000/a                 memory     16GiB DIMM RAM
+/0/1000/b                 memory     16GiB DIMM RAM
+/0/1000/c                 memory     16GiB DIMM RAM
+/0/1000/d                 memory     16GiB DIMM RAM
+/0/1000/e                 memory     16GiB DIMM RAM
+/0/1000/f                 memory     16GiB DIMM RAM
+/0/1000/10                memory     16GiB DIMM RAM
+/0/1000/11                memory     16GiB DIMM RAM
+/0/1000/12                memory     16GiB DIMM RAM
+/0/1000/13                memory     16GiB DIMM RAM
+/0/1000/14                memory     16GiB DIMM RAM
+/0/1000/15                memory     16GiB DIMM RAM
+/0/1000/16                memory     16GiB DIMM RAM
+/0/1000/17                memory     16GiB DIMM RAM
+/0/1000/18                memory     16GiB DIMM RAM
+/0/1000/19                memory     16GiB DIMM RAM
+/0/1000/1a                memory     16GiB DIMM RAM
+/0/1000/1b                memory     16GiB DIMM RAM
+/0/1000/1c                memory     16GiB DIMM RAM
+/0/1000/1d                memory     16GiB DIMM RAM
+/0/1000/1e                memory     16GiB DIMM RAM
+/0/1000/1f                memory     16GiB DIMM RAM
+/0/1000/20                memory     16GiB DIMM RAM
+/0/1000/21                memory     16GiB DIMM RAM
+/0/1000/22                memory     16GiB DIMM RAM
+/0/1000/23                memory     16GiB DIMM RAM
+/0/1000/24                memory     16GiB DIMM RAM
+/0/1000/25                memory     16GiB DIMM RAM
+/0/1000/26                memory     16GiB DIMM RAM
+/0/1000/27                memory     16GiB DIMM RAM
+/0/1000/28                memory     16GiB DIMM RAM
+/0/1000/29                memory     16GiB DIMM RAM
+/0/1000/2a                memory     16GiB DIMM RAM
+/0/1000/2b                memory     16GiB DIMM RAM
+/0/1000/2c                memory     16GiB DIMM RAM
+/0/1000/2d                memory     16GiB DIMM RAM
+/0/1000/2e                memory     16GiB DIMM RAM
+/0/1000/2f                memory     16GiB DIMM RAM
+/0/1000/30                memory     16GiB DIMM RAM
+/0/1000/31                memory     16GiB DIMM RAM
+/0/1000/32                memory     16GiB DIMM RAM
+/0/1000/33                memory     16GiB DIMM RAM
+/0/1000/34                memory     16GiB DIMM RAM
+/0/1000/35                memory     16GiB DIMM RAM
+/0/1000/36                memory     16GiB DIMM RAM
+/0/1000/37                memory     16GiB DIMM RAM
+/0/1000/38                memory     16GiB DIMM RAM
+/0/1000/39                memory     16GiB DIMM RAM
+/0/1000/3a                memory     16GiB DIMM RAM
+/0/1000/3b                memory     16GiB DIMM RAM
+/0/1000/3c                memory     1GiB DIMM RAM
+/0/100                    bridge     440FX - 82441FX PMC [Natoma]
+/0/100/1                  bridge     82371AB/EB/MB PIIX4 ISA
+/0/100/1.3                bridge     82371AB/EB/MB PIIX4 ACPI
+/0/100/3                  generic    Virtio SCSI
+/0/100/3/0                generic    Virtual I/O device
+/0/100/4                  network    Virtio network device
+/0/100/4/0    ens4        network    Ethernet interface
+/0/1          scsi0       storage    
+/0/1/0.1.0    /dev/sda    disk       10GB PersistentDisk
+/0/1/0.1.0/1  /dev/sda1   volume     10128MiB EXT4 volume
+/0/1/0.1.0/e  /dev/sda14  volume     4095KiB BIOS Boot partition
+/0/1/0.1.0/f  /dev/sda15  volume     105MiB Windows FAT volume
