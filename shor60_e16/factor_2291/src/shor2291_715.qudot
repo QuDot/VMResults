@@ -1,0 +1,52 @@
+.qudot qubits=35, ensemble=500000
+
+.gate main: args=0, regs=9, qubit_regs=7
+    // control qubits start/end
+    iload r1, 1
+    iload r2, 23
+    // modulo multiplication qubits start/end
+    iload r3, 24
+    iload r4, 35
+
+    qload_seq q0, 1, 23
+    qloadr q1, r3
+    qloadr q2, r4
+
+    // initialize state
+    hon q0
+    xon q2
+
+    // number to factor
+    iload r5, 2291
+    // random number
+    iload r6, 715
+
+    // setup loop variable
+    move r7, r2
+    iload r9, 0
+    // modular exponatiation
+    ModExp:
+        printr r7
+        brlez r7, doneModExp
+        modpow r8, r6, r9, r5
+        //printr r8
+        qloadr q3, r7
+        ciqumul_mod r8, r5, q1, q2, q3
+        decr r7
+        incr r9
+        br ModExp
+
+    doneModExp:
+        // measure the second register
+        qload_seq q4, 24, 35
+        mon q4
+
+        printr r7
+        qloadr q5, r1
+        qloadr q6, r2
+        qft_inv q5, q6
+   
+        printr r7
+        halt
+
+
